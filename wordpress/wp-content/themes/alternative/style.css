@@ -1,0 +1,480 @@
+/*
+Theme Name:Alternative
+Theme URI: https://themefreesia.com/themes/alternative
+Author: Theme Freesia
+Author URI: https://themefreesia.com
+Description: Alternative is a Responsive Blogger WordPress Child Theme, Designed and Developed by Theme Freesia. Alternative is Simple, clean, blog-focused, and designed for clarity. Get free support at https://tickets.themefreesia.com/ and View demo site at https://demo.themefreesia.com/alternative.
+Version: 1.0.4
+Text Domain: alternative
+Template: edge
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+
+Tags: threaded-comments, right-sidebar, custom-background, custom-header, custom-menu, editor-style, sticky-post, theme-options, translation-ready, post-formats, custom-logo, footer-widgets, blog, news, portfolio
+
+All files, unless otherwise stated, are released under the GNU General Public License
+version 3.0 (http://www.gnu.org/licenses/gpl-3.0.html)
+==================================================
+*/
+
+
+#page {
+	background-color: #f8f8f8;
+}
+
+.top-header {
+	border-bottom: none;
+}
+
+#sticky_header {
+	width: inherit;
+}
+
+#sticky_header {
+	border-bottom: 1px solid rgba(238, 238, 238, 0.6);
+	box-shadow: 0 0 3px 0 rgba(238, 238, 238, 0.72);
+}
+
+.main-navigation ul li ul:after {
+	border-color: transparent transparent #333 transparent;
+}
+
+.main-navigation ul li ul:after {
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 6px 6px 6px;
+	position: absolute;
+	left: 50%;
+	margin-left: -6px;
+	top: -8px;
+}
+
+.main-navigation ul li ul:before {
+	background-color: #333;
+	content: '';
+	width: 100%;
+	height: 2px;
+	position: absolute;
+	left: 0;
+	top: -2px;
+	display: block;
+}
+
+.main-navigation ul li ul {
+	background-color: #fff;
+	-webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+	line-height: 2.667;
+	list-style-type: none;
+	margin: 0;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+	padding: 0;
+	position: absolute;
+	left: 50%;
+	top: 60px;
+	transform: translateX(-50%);
+	-webkit-transition: all .50s ease;
+	-moz-transition: all .50s ease;
+	-ms-transition: all .50s ease;
+	-o-transition: all .50s ease;
+	transition: all .50s ease;
+	visibility: hidden;
+	width: 200px;
+	z-index: 9999;
+}
+
+.main-navigation ul li ul li ul:after {
+	display: none;
+}
+
+.main-navigation ul li ul li ul {
+	left: 300px;
+	top: 10px;
+}
+@media only screen and (max-width: 767px) {
+
+	.main-navigation ul li ul {
+		transform: translateX(0%);
+	}
+
+	.main-navigation ul li ul:after,
+	.main-navigation ul li ul:before {
+		display: none;
+	}
+}
+
+.main-slider {
+	margin: 40px auto 0;
+	max-width: 1170px;
+}
+
+.slider-content .slider-title, 
+.slider-content .slider-title a {
+	font-size: 28px;
+}
+
+.slider-content {
+	border: none !important;
+	padding-bottom: 20px !important;
+	width: 50%;
+}
+
+.slider-buttons .btn-default:first-child {
+	display: none;
+}
+
+.slider-button {
+	text-align: right;
+	right: 30px;
+	bottom: 30px;
+}
+
+.promonational-img {
+	padding: 0;
+	transition: 0.5s;
+}
+
+.promonational-img:hover {
+	padding: 10px;
+}
+
+.promonational-overlay h4 {
+	font-size: 14px;
+	letter-spacing: 1px;
+	line-height: 21px;
+	max-width: 100%;
+	padding: 8px 12px 10px 14px;
+	top: 82%;
+	width: 90%;
+	text-transform: none;
+	transition: 0.5s;
+}
+
+.promonational-img:hover .promonational-overlay h4 {
+	box-shadow: 0px 12px 29px -11px rgba(0,0,0,0.4);
+	top: 80%;
+}
+
+#primary {
+	width: 66.66%;
+}
+
+#secondary  {
+	width: 33.33%;
+}
+
+#secondary .widget {
+	background-color: #fff;
+	box-shadow: 0 1px 0 0 rgba(238, 238, 238, 0.6);
+	border: 1px solid #efefef;
+	padding: 30px;
+}
+
+#secondary .widget-title {
+	margin: -30px -30px 25px;
+	border-bottom: 1px solid #eee;
+	padding: 15px 30px;
+	background-color: transparent;
+	color: #333;
+}
+
+#secondary .widget-title:after {
+	display: none;
+}
+
+.post-featured-image {
+	margin-bottom: 0;
+}
+
+.post-text-content {
+	background-color: #fff;
+	box-shadow: 0 1px 0 0 rgba(238, 238, 238, 0.6);
+	border: 1px solid #efefef;
+	padding: 30px 30px 20px;
+}
+
+.post:first-child .entry-content p:first-child::first-letter {
+	border-right: none;
+	margin-right: 15px;
+}
+
+.single .post,
+.single .page {
+	background-color: #fff;
+	box-shadow: 0 1px 0 0 rgba(238, 238, 238, 0.6);
+	border: 1px solid #efefef;
+	padding: 30px 30px 20px;
+}
+
+.entry-meta,
+.entry-title {
+	text-align: left;
+}
+
+.cat-links, .tag-links {
+	border-bottom: none;
+}
+
+.cat-links, 
+.cat-links a, 
+.tag-links, 
+.tag-links a {
+	font-weight: bold;
+	padding-bottom: 10px;
+	letter-spacing: 0.3px;
+}
+
+.home .entry-meta .posted-on {
+	margin-right: 15px;
+}
+
+.entry-footer a.more-link {
+	border-left: 1px solid rgba(0, 0, 0, 0.15);
+	border-right: 1px solid rgba(0, 0, 0, 0.15);
+	color: #aeaeae;
+}
+
+.entry-title, 
+.entry-title a {
+	color: #121212;
+	font-weight: 600;
+}
+
+.entry-footer {
+	border-bottom: none;
+	text-align: left;
+}
+
+a.more-link:hover {
+	letter-spacing: 1px;
+	background-color: #f8f8f8;
+}
+
+.small_image_blog .post-featured-image {
+	margin: 30px 20px 20px 30px;
+}
+
+#colophon .column-1, 
+#colophon .column-2, 
+#colophon .column-3, 
+#colophon .column-4 {
+	border-right: none !important;
+}
+
+.site-info .social-links a {
+	border: 1px solid #ddd;
+	color: #747474;
+	border-radius: 3px 12px 0 0;
+}
+
+/* Popular Post Widget
+================================================== */
+
+.widget-popular-posts {
+	position: relative;
+	width: 100%;
+}
+
+.tf-popular .tf-post {
+	clear: both;
+	margin-bottom: 15px;
+	display: inline-block;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+.tf-popular .tf-post:last-child {
+	border-bottom: none;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.tf-popular .tf-featured-image {
+	float: left;
+	width: 75px;
+	margin-right: 15px;
+	margin-bottom: 10px;
+}
+
+.tf-popular .has-post-thumbnail .tf-content {
+	width: calc(100% - 90px);
+	float: right;
+}
+
+.tf-content .tf-title {
+	font-size: 16px;
+	line-height: 23px;
+	margin-bottom: 0;
+	padding-bottom: 10px;
+}
+
+.tf-entry-meta span {
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 5px;
+}
+
+.tf-entry-meta, 
+.tf-entry-meta a {
+	color: #949494;
+	font-size: 11px;
+	letter-spacing: 0.2px;
+	line-height: 20px;
+}
+
+.tf-entry-meta .author {
+	display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+	.main-slider {
+		margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.small_image_blog .post-featured-image {
+		margin: 0;
+	}
+}
+
+/*
+Alternative Color Style
+Description: Used to style to change theme color.
+*/
+
+/* Site Title, Page Title, Nav and links hover */
+
+a,
+ul li a:hover,
+ol li a:hover,
+.top-header .widget_contact ul li a:hover, /* Top Header Widget Contact */
+.main-navigation a:hover, /* Navigation */
+.main-navigation ul li.current-menu-item a,
+.main-navigation ul li.current_page_ancestor a,
+.main-navigation ul li.current-menu-ancestor a,
+.main-navigation ul li.current_page_item a,
+.main-navigation ul li:hover > a,
+.main-navigation li.current-menu-ancestor.menu-item-has-children > a:after,
+.main-navigation li.current-menu-item.menu-item-has-children > a:after,
+.main-navigation ul li:hover > a:after,
+.main-navigation li.menu-item-has-children > a:hover:after,
+.main-navigation li.page_item_has_children > a:hover:after,
+.main-navigation ul li ul li a:hover,
+.main-navigation ul li ul li:hover > a,
+.main-navigation ul li.current-menu-item ul li a:hover,
+.header-search:hover, .header-search-x:hover, /* Header Search Form */
+.entry-title a:hover, /* Post */
+.entry-title a:focus,
+.entry-title a:active,
+.entry-meta span:hover,
+.entry-meta a:hover,
+.cat-links,
+.cat-links a,
+.tag-links,
+.tag-links a,
+.entry-meta .entry-format a,
+.entry-format:before,
+.entry-meta .entry-format:before,
+.entry-header .entry-meta .entry-format:before,
+.widget ul li a:hover,/* Widgets */
+.widget-title a:hover,
+.widget_contact ul li a:hover,
+.site-info .copyright a:hover, /* Footer */
+#colophon .widget ul li a:hover,
+#footer-navigation a:hover {
+	color: #7eab9f;
+}
+.cat-links,
+.tag-links {
+	border-bottom-color: #7eab9f;
+}
+
+/* Webkit */
+::selection {
+	background: #7eab9f;
+	color: #fff;
+}
+/* Gecko/Mozilla */
+::-moz-selection {
+	background: #7eab9f;
+	color: #fff;
+}
+
+/* Accessibility
+================================================== */
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	color: #7eab9f;
+}
+
+/* Buttons reset, button, submit */
+
+input[type="reset"],/* Forms  */
+input[type="button"],
+input[type="submit"],
+.go-to-top a:hover {
+	background-color:#7eab9f;
+}
+
+/* Default Buttons */
+.btn-default:hover,
+.vivid,
+.search-submit {
+	background-color: #7eab9f;
+	border: 1px solid #7eab9f;
+}
+.go-to-top a {
+	border: 2px solid #7eab9f;
+	color: #7eab9f;
+}
+
+#colophon .widget-title:after {
+	background-color: #7eab9f;
+}
+
+/* -_-_-_ Not for change _-_-_- */
+.light-color:hover,
+.vivid:hover {
+	background-color: #fff;
+	border: 1px solid #fff;
+}
+
+ul.default-wp-page li a {
+	color: #7eab9f;
+}
+
+/* #bbpress
+================================================== */
+#bbpress-forums .bbp-topics a:hover {
+	color: #7eab9f;
+}
+.bbp-submit-wrapper button.submit {
+	background-color: #7eab9f;
+	border: 1px solid #7eab9f;
+}
+
+/* Woocommerce
+================================================== */
+.woocommerce #respond input#submit, 
+.woocommerce a.button, 
+.woocommerce button.button, 
+.woocommerce input.button,
+.woocommerce #respond input#submit.alt, 
+.woocommerce a.button.alt, 
+.woocommerce button.button.alt, 
+.woocommerce input.button.alt,
+.woocommerce-demo-store p.demo_store {
+	background-color: #7eab9f;
+}
+.woocommerce .woocommerce-message:before {
+	color: #7eab9f;
+}
