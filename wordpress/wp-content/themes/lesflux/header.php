@@ -70,9 +70,9 @@ $edge_settings = edge_get_theme_options(); ?>
 		<!-- Main Header============================================= -->
 				<div id="sticky_header">
 					<div class="container clearfix">
-					  	<h3 class="nav-site-title">
+					  	<!-- <h3 class="nav-site-title">
 							<a href="<?php echo esc_url(home_url('/'));?>" title="<?php echo esc_attr(get_bloginfo('name', 'display'));?>"><?php bloginfo('name');?></a>
-						</h3>
+						</h3> -->
 					<!-- end .nav-site-title -->
 
 						<!-- Main Nav ============================================= -->

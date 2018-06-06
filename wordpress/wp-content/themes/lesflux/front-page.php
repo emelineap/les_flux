@@ -21,72 +21,62 @@ include 'header.php';
 	<div class="row">
 		<div class="last-posts">
 
+			<h2>Derniers articles</h2>
+
 			<!-- Get last 3 posts -->
 			<?php
-			$args = array(
-				'numberposts' => 3,
+			query_posts( array(
+				'numberposts' 	=> 3,
 				'offset' => 0,
 				'category' => 0,
 				'orderby' => 'post_date',
 				'order' => 'DESC',
 				'include' => '',
 				'exclude' => '',
-				'meta_key' => '',
-				'meta_value' =>'',
-				'post_type' => 'post',
 				'post_status' => 'publish',
-				'suppress_filters' => true
-			);
+				'suppress_filters' => true,
+				'post_type' => 'post',
+				'meta_key' => '_thumbnail_id',
+				'meta_value_num' => 0,
+				'meta_compare' => '!=' 
+			) );
 
-			$recent_posts = wp_get_recent_posts( $args, ARRAY_A );
-			?>
+			while (have_posts()) : the_post(); ?>
+			<ul>
+				<li><img class="post-thumbnail" src="<?php the_post_thumbnail(); ?></li>
+				<li><a href="<?php the_permalink(); ?>"><h4><?php the_title(); ?></h4></a></li>
+				<li><?php the_excerpt(__('(more…)')); ?></li>
+			</ul>
+			<?php 
+		endwhile; 
+		?>
 
-			<!-- Get the posts thumbnails -->
-			<?php
-			function get_the_post_thumbnail( $post = null, $size = 'post-thumbnail', $attr = '' ) {
-				$post = get_post( $post );
-				if ( ! $post ) {
-					return '';
-				}
-				$post_thumbnail_id = get_post_thumbnail_id( $post );
-				?>
+	</div>
+</div>
 
-				<h2>Derniers articles</h2>
-				<ul>
-					<?php
-					$recent_posts = wp_get_recent_posts();
-					foreach( $recent_posts as $recent ){
-						echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> ';
-					}
-					wp_reset_query();
-					?>
-				</ul>
-			</div>
-		</div>
-
-		<div class="row">
-			<div class="newsletter">
-				<!-- Begin MailChimp Signup Form -->
-				<div id="mc_embed_signup"><form id="mc-embedded-subscribe-form" class="validate" action="https://tumblr.us14.list-manage.com/subscribe/post?u=5bd0d33a577ee592df934d133&amp;id=6ea9ff353e" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank">
-					<div id="mc_embed_signup_scroll">
-						<p class="signup-newsletter">Abonnez-vous à la Newsletter de ma chatte</p>
-						<div class="mc-field-group"><label for="mce-EMAIL">
-						</label>
-						<div class="signup-block">
-							<div class="newsletter-input">
-								<input id="mce-EMAIL" class="required email" name="EMAIL" type="email" value="" placeholder="Votre email" />
-								<div id="mce-responses" class="clear">
-									<div id="mce-error-response" class="response" style="display: none;"></div>
-									<div id="mce-success-response" class="response" style="display: none;"></div>
-								</div>
-							</div>
-							<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-							<div style="position: absolute; left: -5000px;" aria-hidden="true"><input tabindex="-1" name="b_5bd0d33a577ee592df934d133_6ea9ff353e" type="text" value="" /></div>
-							<div class="clear"><input id="mc-embedded-subscribe" class="button" name="subscribe" type="submit" value="S'abonner" /></div>
+<div class="row">
+	<div class="newsletter">
+		<!-- Begin MailChimp Signup Form -->
+		<div id="mc_embed_signup"><form id="mc-embedded-subscribe-form" class="validate" action="https://tumblr.us14.list-manage.com/subscribe/post?u=5bd0d33a577ee592df934d133&amp;id=6ea9ff353e" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank">
+			<div id="mc_embed_signup_scroll">
+				<p class="signup-newsletter">Abonnez-vous à la Newsletter de ma chatte</p>
+				<div class="mc-field-group"><label for="mce-EMAIL">
+				</label>
+				<div class="signup-block">
+					<div class="newsletter-input">
+						<input id="mce-EMAIL" class="required email" name="EMAIL" type="email" value="" placeholder="Votre email" />
+						<div id="mce-responses" class="clear">
+							<div id="mce-error-response" class="response" style="display: none;"></div>
+							<div id="mce-success-response" class="response" style="display: none;"></div>
 						</div>
 					</div>
+					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input tabindex="-1" name="b_5bd0d33a577ee592df934d133_6ea9ff353e" type="text" value="" /></div>
+					<div class="clear"><input id="mc-embedded-subscribe" class="button" name="subscribe" type="submit" value="S'abonner" /></div>
 				</div>
-			</form></div>
+			</div>
+		</div>
+	</form></div>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email'; /*
  * Translated default messages for the $ validation plugin.
  * Locale: FR
