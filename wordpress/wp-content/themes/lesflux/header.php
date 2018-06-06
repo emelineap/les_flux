@@ -8,17 +8,33 @@
  */
 ?>
 <!DOCTYPE html>
+
 <html <?php language_attributes(); ?>>
 <?php
 $edge_settings = edge_get_theme_options(); ?>
+
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+
+<!-- BOOTSTRAP CDN -->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<!-- FONTS -->
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans|Lato" rel="stylesheet">
+
 <?php wp_head(); ?>
 </head>
+
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
+
 <!-- Masthead ============================================= -->
 <header id="masthead" class="site-header">
 		<?php if ( function_exists( 'the_custom_header_markup' ) ) {
@@ -50,6 +66,7 @@ $edge_settings = edge_get_theme_options(); ?>
 				 do_action('edge_site_branding'); ?>
 			</div> <!-- end .container -->
 		</div> <!-- end .top-header -->
+
 		<!-- Main Header============================================= -->
 				<div id="sticky_header">
 					<div class="container clearfix">
@@ -57,6 +74,7 @@ $edge_settings = edge_get_theme_options(); ?>
 							<a href="<?php echo esc_url(home_url('/'));?>" title="<?php echo esc_attr(get_bloginfo('name', 'display'));?>"><?php bloginfo('name');?></a>
 						</h3>
 					<!-- end .nav-site-title -->
+
 						<!-- Main Nav ============================================= -->
 						<?php
 							if (has_nav_menu('primary')) { ?>
@@ -74,6 +92,7 @@ $edge_settings = edge_get_theme_options(); ?>
 					  		<!-- end .menu-toggle -->
 							<?php wp_nav_menu($args);//extract the content from apperance-> nav menu ?>
 						</nav> <!-- end #site-navigation -->
+
 						<?php } else {// extract the content from page menu only ?>
 						<nav id="site-navigation" class="main-navigation clearfix">
 							<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
@@ -118,6 +137,7 @@ $edge_settings = edge_get_theme_options(); ?>
 			}
 		} ?>
 </header> <!-- end #masthead -->
+
 <!-- Main Page Start ============================================= -->
 <div id="content">
 <div class="container clearfix">

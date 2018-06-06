@@ -6,9 +6,29 @@ Template: edge
 @import url("../edge/style.css");
 
 /*
+0. BODY
 1. HEADER
 2. NAVBAR
+3. NEWSLETTER SIGN UP FORM
 */
+
+/****************************************************************/
+/* 0. BODY */
+/****************************************************************/
+
+body p, h1, h2, h3, h4, h5, h6 {
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 16px;
+}
+
+.container {
+	width: 100%;
+	max-width: 100%;
+}
+
+/****************************************************************/
+/* 1. HEADER */
+/****************************************************************/
 
 /****************************************************************/
 /* 2. NAVBAR */
@@ -17,7 +37,7 @@ Template: edge
 /* Menu items: Accueil */
 .main-navigation a:hover, .main-navigation ul li.current-menu-item a, .main-navigation ul li.current_page_ancestor a, .main-navigation ul li.current-menu-ancestor a, .main-navigation ul li.current_page_item a, .main-navigation ul li:hover > a, .main-navigation li.current-menu-ancestor.menu-item-has-children > a, .main-navigation li.current-menu-item.menu-item-has-children > a, .main-navigation ul li:hover > a, .main-navigation li.menu-item-has-children > a:hover, .main-navigation li.page_item_has_children > a:hover {
 	color: #B90504;
-	font-size: 0.9em;
+	font-size: 0.8rem;
 }
 
 .main-navigation a:hover, .main-navigation ul li.current-menu-item a, .main-navigation ul li.current_page_ancestor a, .main-navigation ul li.current-menu-ancestor a, .main-navigation ul li.current_page_item a, .main-navigation ul li:hover > a, .main-navigation li.current-menu-ancestor.menu-item-has-children > a, .main-navigation li.current-menu-item.menu-item-has-children > a, .main-navigation ul li:hover > a, .main-navigation li.menu-item-has-children > a:hover, .main-navigation li.page_item_has_children > a:hover {
@@ -27,7 +47,7 @@ Template: edge
 /* Menu items */
 .main-navigation a {
 	color: #B90504;
-	font-size: 0.9em;
+	font-size: 0.8rem;
 }
 
 .main-navigation a:hover {
@@ -43,9 +63,53 @@ Template: edge
 .main-navigation ul li ul li a, .main-navigation ul li.current-menu-item ul li a, .main-navigation ul li ul li.current-menu-item a, .main-navigation ul li.current_page_ancestor ul li a, .main-navigation ul li.current-menu-ancestor ul li a, .main-navigation ul li.current_page_item ul li a {
 	color: #B90504;
 	text-transform: uppercase;
-	font-size: 0.9em;
+	font-size: 0.8rem;
 }
 
 .main-navigation ul li ul li a, .main-navigation ul li.current-menu-item ul li a, .main-navigation ul li ul li.current-menu-item a, .main-navigation ul li.current_page_ancestor ul li a, .main-navigation ul li.current-menu-ancestor ul li a, .main-navigation ul li.current_page_item ul li a:hover {
 	color: #990100;
+}
+
+/****************************************************************/
+/* 3. NEWSLETTER SIGNUP FORM */
+/****************************************************************/
+
+.newsletter {
+	background: #B90504; 	
+}
+
+#mc_embed_signup {
+	clear:left; 
+	font-family: font-family: 'Lato', sans-serif;
+	font-size:0.8rem; 
+	width: 70%;
+	text-align: center;
+	margin: auto;
+	padding: 2.5rem;
+}
+
+.signup-newsletter {
+	color: white;
+	font-weight: 550;
+	font-size: 1.5rem;
+	margin-bottom: 0;
+}
+
+.signup-block {
+	display: flex;
+	margin: auto;
+}
+
+#newsletter-input {
+	width: 20rem;
+}
+
+/*input #mce-EMAIL {
+	width: 50rem;
+}*/
+
+#mc-embedded-subscribe.button {
+	background-color: white;
+	color: #B90504;
+	width: 5rem;
 }
