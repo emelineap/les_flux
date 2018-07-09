@@ -11,6 +11,8 @@ Template: edge
 2. NAVBAR
 3. LAST POSTS HOMEPAGE
 4. NEWSLETTER SIGN UP FORM
+5. VIDÉOS & ATELIERS
+6. FOOTER
 */
 
 /****************************************************************/
@@ -23,16 +25,38 @@ body p, h1, h2, h3, h4, h5, h6 {
 }
 
 body a {
-	color: #B90504;
+	color: c
 }
 
 body a:hover {
-	color: #990100;
+	color: #FFB6C1;
+}
+
+h2 {
+	color: #B90504;
+	font-weight: bold;
+	font-size: 2rem;
+	text-align: center;
+}
+
+h4 {
+	color: #B90504;
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.2rem;
 }
 
 .container {
 	width: 100%;
 	max-width: 100%;
+}
+
+.page-title {
+	display: none;
+}
+
+#content {
+	padding: 0;
 }
 
 /****************************************************************/
@@ -42,6 +66,15 @@ body a:hover {
 .is-sticky .main-navigation .menu {
 	float: none;
 	background-color: white;
+}
+
+.page-header {
+    padding-bottom: 0;
+    border-bottom: 0px solid #eee;
+}
+
+.header-home {
+	margin-bottom: 2rem;
 }
 
 /****************************************************************/
@@ -56,7 +89,7 @@ body a:hover {
 }
 
 .main-navigation a:hover, .main-navigation ul li.current-menu-item a, .main-navigation ul li.current_page_ancestor a, .main-navigation ul li.current-menu-ancestor a, .main-navigation ul li.current_page_item a, .main-navigation ul li:hover > a, .main-navigation li.current-menu-ancestor.menu-item-has-children > a, .main-navigation li.current-menu-item.menu-item-has-children > a, .main-navigation ul li:hover > a, .main-navigation li.menu-item-has-children > a:hover, .main-navigation li.page_item_has_children > a:hover {
-	color: #990100;
+	color: #FFB6C1;
 }
 
 /* Menu items */
@@ -66,7 +99,7 @@ body a:hover {
 }
 
 .main-navigation a:hover {
-	color: #990100;
+	color: #FFB6C1;
 }
 
 /* Sub-menu (menu déroulant) */
@@ -81,24 +114,55 @@ body a:hover {
 	font-size: 0.8rem;
 }
 
-.main-navigation ul li ul li a, .main-navigation ul li.current-menu-item ul li a, .main-navigation ul li ul li.current-menu-item a, .main-navigation ul li.current_page_ancestor ul li a, .main-navigation ul li.current-menu-ancestor ul li a, .main-navigation ul li.current_page_item ul li a:hover {
-	color: #990100;
+.main-navigation ul li ul li a:hover, .main-navigation ul li ul li:hover > a, .main-navigation ul li.current-menu-item ul li a:hover {
+	color: #FFB6C1;	
 }
+
 
 /****************************************************************/
 /* 3. LAST POSTS HOMEPAGE */
 /****************************************************************/
 
-.post-thumbnail {
-	width: 30%;
+.row-last-posts .last-posts {
+  display: flex;
+  justify-content: center;
 }
+
+.post-thumbnail-parent {
+	width: 80%;
+}
+
+.post-thumbnail-parent {
+	padding: 2rem;
+	text-align: center;
+}
+
+.post-thumbnail-parent p {
+	padding-left: 2rem;
+	padding-right: 2rem;
+	font-size: 0.9rem;
+}
+
+.post-thumbnail-parent h4 {
+	text-transform: uppercase;
+}
+
+.post-thumbnail-parent h4:hover {
+	color: #FFB6C1;
+}
+
+.post-thumbnail {
+	margin-bottom: 1rem;
+}
+
 
 /****************************************************************/
 /* 4. NEWSLETTER SIGNUP FORM */
 /****************************************************************/
 
 .newsletter {
-	background: #B90504; 	
+	background: #B90504;
+	margin-bottom: 3rem; 	
 }
 
 #mc_embed_signup {
@@ -120,19 +184,95 @@ body a:hover {
 
 .signup-block {
 	display: flex;
-	margin: auto;
 }
 
-#newsletter-input {
-	width: 20rem;
-}
-
-/*input #mce-EMAIL {
+.newsletter-input {
 	width: 50rem;
-}*/
+	margin-right: 1rem;
+}
 
 #mc-embedded-subscribe.button {
-	background-color: white;
-	color: #B90504;
-	width: 5rem;
+	background-color: #FFB6C1;
+	color: white;
+	width: 10rem;
+	height: 2.8rem;
+	font-weight: bold;
+}
+
+#mc-embedded-subscribe.button:hover {
+	background-color: #990100;
+	color: white;
+}
+
+
+/****************************************************************/
+/* 5. VIDÉOS & ATELIERS */
+/****************************************************************/
+
+.last-videos ul {
+	margin: 2rem;
+}
+
+.last-ateliers ul {
+	margin: 2rem;
+}
+
+.thumbnail-last-videos, .thumbnail-last-ateliers {
+	margin-bottom: 1rem;
+}
+
+.last-videos a h4:hover {
+	color: #FFB6C1;
+}
+
+.last-ateliers a h4:hover {
+	color: #FFB6C1;
+}
+
+
+/****************************************************************/
+/* 6. FOOTER */
+/****************************************************************/
+
+footer {
+}
+
+.site-info {
+	background-color: #B90504;
+}
+
+#footer-navigation .menu-item a {
+	color: white;
+}
+
+#footer-navigation .menu-item a:hover {
+	color: #FFB6C1;
+}
+
+.site-info .copyright {
+	color: white;
+	margin-bottom: 2rem;
+}
+
+.site-info .copyright a {
+	color: white;
+}
+
+.site-info .copyright a:hover {
+	color: #FFB6C1;
+}
+
+#footer-navigation ul {
+	color: white;
+}
+
+.go-to-top a {
+	border: 2px solid white;
+	color: white;
+}
+
+.go-to-top a:hover {
+	border: 2px solid white;
+	color: white;
+	background-color: #B90504;
 }
