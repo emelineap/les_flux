@@ -6,6 +6,7 @@ Template: edge
 @import url("../edge/style.css");
 
 /*
+///// HOMEPAGE /////
 0. BODY
 1. HEADER
 2. NAVBAR
@@ -13,7 +14,21 @@ Template: edge
 4. NEWSLETTER SIGN UP FORM
 5. VIDÉOS & ATELIERS
 6. FOOTER
+
+///// POSTS /////
+1. ALL POSTS
+2. ONE POST LAYOUT
+
+///// PAGES /////
+
+///// SEARCHBAR & SEARCH RESULTS PAGE /////
+1. SEARCH BAR
+2. SEARCH RESULTS PAGE
+
 */
+
+
+/* HOMEPAGE */
 
 /****************************************************************/
 /* 0. BODY */
@@ -25,11 +40,15 @@ body p, h1, h2, h3, h4, h5, h6 {
 }
 
 body a {
-	color: c
+	color: #B90504;
 }
 
 body a:hover {
 	color: #FFB6C1;
+}
+
+body a:visited {
+	color: #990100;
 }
 
 h2 {
@@ -37,6 +56,14 @@ h2 {
 	font-weight: bold;
 	font-size: 2rem;
 	text-align: center;
+}
+
+h3 {
+	color: #B90504;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.8rem;
 }
 
 h4 {
@@ -276,3 +303,105 @@ footer {
 	color: white;
 	background-color: #B90504;
 }
+
+#footer-navigation ul li:before {
+	border-right-color: white;
+}
+
+
+/* POSTS */
+
+/****************************************************************/
+/* 1. ALL POSTS */
+/****************************************************************/
+
+.entry-title a{
+	text-transform: uppercase;
+	color: #B90504;
+}
+
+.entry-title a:hover {
+	color: #FFB6C1;
+}
+
+.more-link {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.more-link:hover {
+	color: #990100;
+}
+
+/****************************************************************/
+/* 1. ONE POST LAYOUT (single.php) */
+/****************************************************************/
+
+.row-single {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.entry-meta, .entry-meta a {
+	color: grey;
+}
+
+.entry-meta, .entry-meta a:hover {
+	color: #B90504;
+}
+
+.cat-links, .cat-links a, .tag-links, .tag-links a {
+	color: grey;
+}
+
+.cat-links:hover, .cat-links a:hover, .tag-links:hover, .tag-links a:hover {
+	color: #B90504;	
+}
+
+.cat-links, .tag-links {
+	border-bottom: none;
+}
+
+ul.default-wp-page li a {
+	color: grey;
+}
+
+ul.default-wp-page li a:hover {
+	color: #B90504;
+}	
+
+
+
+/* PAGES */
+
+.row-page {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+#primary {
+	width: 100%;
+}
+
+
+/* SEARCHBAR & SEARCH RESULTS PAGE */
+
+/****************************************************************/
+/* 1. SEARCHBAR */
+/****************************************************************/
+
+.header-search:hover, .header-search-x:hover {
+	color: #B90504;
+}
+
+.search-submit {
+	background-color: #FFB6C1;
+	border: 1px solid #FFB6C1;
+	color: white;
+}
+
+/****************************************************************/
+/* 2. SEARCH RESULTS PAGE (search.php) */
+/****************************************************************/
+

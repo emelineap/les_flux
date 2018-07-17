@@ -27,9 +27,9 @@ include 'header.php';
 			<!-- Get last 3 posts -->
 			<?php
 			query_posts( array(
-				'numberposts' 	=> 3,
+				'posts_per_page' 	=> 3,
 				'offset' => 0,
-				'category' => 0,
+				'category_name' => 'Articles',
 				'orderby' => 'post_date',
 				'order' => 'DESC',
 				'include' => '',
