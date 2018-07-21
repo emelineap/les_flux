@@ -85,8 +85,8 @@ $footer_column = $edge_settings['edge_footer_column_section'];
 		else:
 			echo '<div class="copyright">' .'&copy; ' . date('Y') .' '; ?>
 			<a title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" target="_blank" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo get_bloginfo( 'name', 'display' ); ?></a> | 
-							<?php esc_html_e('Designed by:','Émeline Ancel-Pirouelle'); ?> <a title="<?php echo esc_attr__( 'Theme by Émeline Ancel-Pirouelle' ); ?>" target="_blank" href="<?php echo esc_url( 'https://www.emelineancelpirouelle.com' ); ?>"><?php esc_html_e('Émeline Ancel-Pirouelle');?></a> | 
-							<?php esc_html_e('Powered by:','edge'); ?> <a title="<?php echo esc_attr__( 'WordPress', 'edge' );?>" target="_blank" href="<?php echo esc_url( 'http://wordpress.org' );?>"><?php esc_html_e('WordPress','edge'); ?></a>
+							<?php esc_html_e('Designed and developed by','Émeline Ancel-Pirouelle'); ?> <a title="<?php echo esc_attr__( 'Theme by Émeline Ancel-Pirouelle' ); ?>" target="_blank" href="<?php echo esc_url( 'https://www.emelineancelpirouelle.com' ); ?>"><?php esc_html_e('Émeline Ancel-Pirouelle');?></a> | 
+							<?php esc_html_e('Powered by','edge'); ?> <a title="<?php echo esc_attr__( 'WordPress', 'edge' );?>" target="_blank" href="<?php echo esc_url( 'http://wordpress.org' );?>"><?php esc_html_e('WordPress','edge'); ?></a>
 			</div>
 		<?php endif; ?>
 			<div style="clear:both;"></div>
