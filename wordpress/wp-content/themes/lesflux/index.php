@@ -23,13 +23,12 @@ if ('default' == $layout) { //Settings from customizer
         <div id="primary">
     <?php }
 } ?>
-<div class="container-fluid container-all-posts">
-    <main id="main" class="site-main clearfix">
-
+<div class="container-all-posts">
+    <main id="main" class="site-width site-main clearfix">
         <?php
         if (have_posts()) {
             ?>
-            <div class="row row-last-posts">
+            <div class="wp-all-posts">
                 <?php
                 while (have_posts()) {
                     the_post();
@@ -40,9 +39,10 @@ if ('default' == $layout) { //Settings from customizer
             <?php
         } else { ?>
             <h2 class="entry-title"> <?php esc_html_e('No Posts Found.', 'edge'); ?> </h2>
-        <?php } ?>
+        <?php }
+         get_template_part('pagination', 'none'); ?>
     </main> <!-- #main -->
-<?php get_template_part('pagination', 'none');
+<?php
 if ('default' == $layout) { //Settings from customizer
     if (($edge_settings['edge_sidebar_layout_options'] != 'nosidebar') && ($edge_settings['edge_sidebar_layout_options'] != 'fullwidth')): ?>
         </div> <!-- #primary -->

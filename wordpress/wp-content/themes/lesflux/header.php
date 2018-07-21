@@ -140,7 +140,7 @@ $edge_settings = edge_get_theme_options(); ?>
 
 <!-- Main Page Start ============================================= -->
 <div id="content">
-<div class="container clearfix">
+<div class="clearfix">
 <?php 
 if(is_front_page()){
 	do_action('edge_display_frontpage_features');

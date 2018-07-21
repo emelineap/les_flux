@@ -15,7 +15,6 @@ if($edge_settings['edge_blog_layout'] == 'photography_layout' && !is_page() && !
 	<?php
 	endif;
 }else{?>
-</div> <!-- end .container -->
 <?php
 } ?>
 </div> <!-- end #content -->

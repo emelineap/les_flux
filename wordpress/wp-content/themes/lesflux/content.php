@@ -11,7 +11,7 @@
 <?php
 
 $edge_settings = edge_get_theme_options(); ?>
-<article class="one-post col-xs-12 col-lg-4" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article class="one-post" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <?php
     $edge_blog_post_image = $edge_settings['edge_blog_post_image'];
     if (has_post_thumbnail() && $edge_blog_post_image == 'on') { ?>

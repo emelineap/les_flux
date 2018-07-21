@@ -86,6 +86,11 @@ h4 {
 	padding: 0;
 }
 
+.site-width {
+	max-width: 1440px;
+	margin: auto;
+}
+
 /****************************************************************/
 /* 1. HEADER */
 /****************************************************************/
@@ -97,7 +102,7 @@ h4 {
 
 .page-header {
     padding-bottom: 0;
-    border-bottom: 0px solid #eee;
+    border-bottom: 0 solid #eee;
 }
 
 .header-home {
@@ -142,7 +147,7 @@ h4 {
 }
 
 .main-navigation ul li ul li a:hover, .main-navigation ul li ul li:hover > a, .main-navigation ul li.current-menu-item ul li a:hover {
-	color: #FFB6C1;	
+	color: #FFB6C1;
 }
 
 
@@ -150,78 +155,42 @@ h4 {
 /* 3. LAST POSTS HOMEPAGE */
 /****************************************************************/
 
-.row-last-posts .last-posts {
-  display: flex;
-  justify-content: center;
-}
-
-.post-thumbnail-parent {
-	width: 80%;
-	padding: 2rem;
-	text-align: center;
-}
-
-.post-thumbnail-parent p {
-	padding-left: 2rem;
-	padding-right: 2rem;
-	font-size: 0.9rem;
-}
-
-.post-thumbnail-parent h4 {
-	text-transform: uppercase;
-}
-
-.post-thumbnail-parent h4:hover {
-	color: #FFB6C1;
-}
-
-.post-thumbnail {
-	margin-bottom: 1rem;
-    height: calc(((100vw / 3) - 64px) * 1.3);
-    width: 100%;
-    object-fit: cover;
-}
-
-.image-resize {
-background-size: cover;
-width: 300px;
-height: 200px;
-}
-
-
 /****************************************************************/
 /* 4. NEWSLETTER SIGNUP FORM */
 /****************************************************************/
 
 .newsletter {
 	background: #B90504;
-	margin-bottom: 3rem; 	
+	margin-bottom: 3rem;
+	text-align: center;
 }
 
 #mc_embed_signup {
-	clear:left; 
-	font-family: font-family: 'Lato', sans-serif;
-	font-size:0.8rem; 
-	width: 70%;
-	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size:0.8rem;
 	margin: auto;
 	padding: 2.5rem;
+	max-width: 800px;
 }
 
 .signup-newsletter {
 	color: white;
-	font-weight: 550;
+	font-weight: 500;
 	font-size: 1.5rem;
 	margin-bottom: 0;
 }
 
 .signup-block {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 .newsletter-input {
-	width: 50rem;
-	margin-right: 1rem;
+	flex: 1 0 auto;
+	transition: 125ms;
+	min-width: 520px;
+	max-width: 520px;
 }
 
 #mc-embedded-subscribe.button {
@@ -344,8 +313,10 @@ footer {
 
 .post-thumbnail {
 	margin-bottom: 1rem;
-	height: calc(((100vw / 3) - 64px) * 1.3);
+	height: 60vh;
 	width: 100%;
+	min-height: 400px;
+	max-height: calc(((100vw / 3) - 64px) * 1);
 	object-fit: cover;
 }
 
@@ -353,6 +324,37 @@ footer {
 	background-size: cover;
 	width: 300px;
 	height: 200px;
+}
+
+.wp-all-posts {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.one-post {
+	flex: 0 0 calc(100% / 1);
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	word-break: break-word;
+}
+
+@media screen and (min-width: 641px) {
+	.one-post {
+		flex: 0 0 calc(100% / 2);
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	.one-post {
+		flex: 0 0 calc(100% / 3);
+	}
+}
+
+.one-post .entry-content {
+	flex: 1 0 auto;
 }
 
 /****************************************************************/
@@ -378,7 +380,7 @@ footer {
 }
 
 .cat-links:hover, .cat-links a:hover, .tag-links:hover, .tag-links a:hover {
-	color: #B90504;	
+	color: #B90504;
 }
 
 .cat-links, .tag-links {
@@ -391,7 +393,7 @@ ul.default-wp-page li a {
 
 ul.default-wp-page li a:hover {
 	color: #B90504;
-}	
+}
 
 
 
