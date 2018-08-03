@@ -11,6 +11,11 @@
 
 get_header();
 $edge_settings = edge_get_theme_options();
+?>
+
+    <h3 class="posts-page-title">DERNIERS ARTICLES</h3>
+
+<?php
 global $edge_content_layout;
 if ($post) {
     $layout = get_post_meta($post->ID, 'edge_sidebarlayout', true);
@@ -23,7 +28,7 @@ if ('default' == $layout) { //Settings from customizer
         <div id="primary">
     <?php }
 } ?>
-<div class="container-all-posts">
+    <div class="container-all-posts">
     <main id="main" class="site-width site-main clearfix">
         <?php
         if (have_posts()) {
@@ -40,15 +45,15 @@ if ('default' == $layout) { //Settings from customizer
         } else { ?>
             <h2 class="entry-title"> <?php esc_html_e('No Posts Found.', 'edge'); ?> </h2>
         <?php }
-         get_template_part('pagination', 'none'); ?>
+        get_template_part('pagination', 'none'); ?>
     </main> <!-- #main -->
 <?php
 if ('default' == $layout) { //Settings from customizer
-    if (($edge_settings['edge_sidebar_layout_options'] != 'nosidebar') && ($edge_settings['edge_sidebar_layout_options'] != 'fullwidth')): ?>
-        </div> <!-- #primary -->
-    <?php endif;
+if (($edge_settings['edge_sidebar_layout_options'] != 'nosidebar') && ($edge_settings['edge_sidebar_layout_options'] != 'fullwidth')): ?>
+    </div> <!-- #primary -->
+<?php endif;
 } ?>
-        </div>
+    </div>
 <?php
 // get_sidebar();
 get_footer();

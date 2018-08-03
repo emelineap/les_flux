@@ -155,6 +155,7 @@ h4 {
 /* 3. LAST POSTS HOMEPAGE */
 /****************************************************************/
 
+
 /****************************************************************/
 /* 4. NEWSLETTER SIGNUP FORM */
 /****************************************************************/
@@ -204,6 +205,23 @@ h4 {
 #mc-embedded-subscribe.button:hover {
 	background-color: #990100;
 	color: white;
+}
+
+.newsletter-footer {
+	font-size: 0.9rem;
+	font-style: oblique;
+}
+
+.newsletter-footer a {
+	color: white;
+}
+
+.newsletter-footer a:visited {
+	color: white;
+}
+
+.newsletter-footer a:hover {
+	color: #FFB6C1;
 }
 
 
@@ -357,6 +375,17 @@ footer {
 	flex: 1 0 auto;
 }
 
+.entry-footer {
+	border-bottom: none;
+}
+
+/* These titles are only displayed on mobile */
+@media screen and (min-width: 641px) {
+	.posts-page-title {
+		display: none;
+	}
+}
+
 /****************************************************************/
 /* 1. ONE POST LAYOUT (single.php) */
 /****************************************************************/
@@ -395,6 +424,22 @@ ul.default-wp-page li a:hover {
 	color: #B90504;
 }
 
+.entry-content img, .comment-content img, .widget img {
+	width: 100%;
+}
+
+.entry-content p {
+	text-align: justify;
+}
+
+/* LETTRINE ? */
+.entry-content p:first-of-type:first-letter {
+}
+
+#main ul li {
+	font-size: 1rem;
+	text-align: justify;
+}
 
 
 /* PAGES */
@@ -402,7 +447,13 @@ ul.default-wp-page li a:hover {
 .row-page {
 	margin-left: auto;
 	margin-right: auto;
-	width: 50%;
+	width: 80%;
+}
+
+@media screen and (min-width: 1025px) {
+	.row-page {
+		width: 50%;
+	}
 }
 
 #primary {

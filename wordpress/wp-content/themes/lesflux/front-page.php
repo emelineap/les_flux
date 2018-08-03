@@ -74,6 +74,9 @@ include 'header.php';
                                        type="submit" value="M'abonner"/></div>
                         </div>
                     </div>
+                    <p class="newsletter-footer">
+                        <a href="https://us14.campaign-archive.com/home/?u=5bd0d33a577ee592df934d133&id=6ea9ff353e">Consultez les newsletters déjà parues</a>
+                    </p>
                 </div>
             </form>
         </div>

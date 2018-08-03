@@ -30,7 +30,7 @@
 		<div id="primary">
 			<?php }
 		}?>
-		<main id="main">
+		<main id="main" class="site-width site-main clearfix">
 			<?php
 			if( has_post_thumbnail() && $edge_settings['edge_display_page_featured_image']!=0) { ?>
 			<div class="post-image-content">
