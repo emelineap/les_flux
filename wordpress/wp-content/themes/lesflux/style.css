@@ -224,6 +224,15 @@ h4 {
 	color: #FFB6C1;
 }
 
+#mce-responses {
+	color: white;
+	font-weight: bold;
+}
+
+#mce-EMAIL {
+	color: black;
+}
+
 
 /****************************************************************/
 /* 5. VIDÉOS & ATELIERS */
