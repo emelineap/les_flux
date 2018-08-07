@@ -20,6 +20,8 @@ Template: edge
 2. ONE POST LAYOUT
 
 ///// PAGES /////
+1. ALL PAGES
+2. CONTACT FORM
 
 ///// SEARCHBAR & SEARCH RESULTS PAGE /////
 1. SEARCH BAR
@@ -453,6 +455,10 @@ ul.default-wp-page li a:hover {
 
 /* PAGES */
 
+/****************************************************************/
+/* 1. ALL PAGES */
+/****************************************************************/
+
 .row-page {
 	margin-left: auto;
 	margin-right: auto;
@@ -469,6 +475,48 @@ ul.default-wp-page li a:hover {
 	width: 100%;
 }
 
+/****************************************************************/
+/* 2. CONTACT FORM */
+/****************************************************************/
+
+.error{
+	padding: 5px 9px;
+	border: 1px solid #B90504;
+	color: #B90504;
+	border-radius: 3px;
+}
+
+.success{
+	padding: 5px 9px;
+	border: 1px solid green;
+	color: green;
+	border-radius: 3px;
+}
+
+form span{
+	color: #B90504;
+}
+
+.contact-form {
+	width: 80%;
+	margin: auto;
+}
+
+@media screen and (min-width: 641px) {
+	.contact-form {
+		width: 50%;
+		margin: auto;
+	}
+}
+
+.contact-submit .contact-input {
+	color: white;
+	background-color: #B90504;
+}
+
+.contact-submit .contact-input:hover {
+	background-color: #990100;
+}
 
 /* SEARCHBAR & SEARCH RESULTS PAGE */
 
