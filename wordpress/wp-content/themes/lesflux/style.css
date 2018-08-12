@@ -471,6 +471,12 @@ ul.default-wp-page li a:hover {
 	}
 }
 
+@media screen and (min-width: 1025px) {
+	.row-page-newsletter {
+		width: 100%;
+	}
+}
+
 #primary {
 	width: 100%;
 }
