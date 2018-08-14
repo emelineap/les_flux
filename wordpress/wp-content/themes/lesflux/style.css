@@ -1,0 +1,546 @@
+/*
+Theme Name: lesflux
+Template: edge
+*/
+
+@import url("../edge/style.css");
+
+/*
+///// HOMEPAGE /////
+0. BODY
+1. HEADER
+2. NAVBAR
+3. LAST POSTS HOMEPAGE
+4. NEWSLETTER SIGN UP FORM
+5. VIDÉOS & ATELIERS
+6. FOOTER
+
+///// POSTS /////
+1. ALL POSTS
+2. ONE POST LAYOUT
+
+///// PAGES /////
+1. ALL PAGES
+2. CONTACT FORM
+
+///// SEARCHBAR & SEARCH RESULTS PAGE /////
+1. SEARCH BAR
+2. SEARCH RESULTS PAGE
+
+*/
+
+
+/* HOMEPAGE */
+
+/****************************************************************/
+/* 0. BODY */
+/****************************************************************/
+
+body p, h1, h2, h3, h4, h5, h6 {
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 16px;
+}
+
+body a {
+	color: #B90504;
+}
+
+body a:hover {
+	color: #FFB6C1;
+}
+
+body a:visited {
+	color: #990100;
+}
+
+h2 {
+	color: #B90504;
+	font-weight: bold;
+	font-size: 2rem;
+	text-align: center;
+}
+
+h3 {
+	color: #B90504;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1.8rem;
+}
+
+h4 {
+	color: #B90504;
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+.container {
+	width: 100%;
+	max-width: 100%;
+}
+
+.page-title {
+	display: none;
+}
+
+#content {
+	padding: 0;
+}
+
+.site-width {
+	max-width: 1440px;
+	margin: auto;
+}
+
+/****************************************************************/
+/* 1. HEADER */
+/****************************************************************/
+
+.is-sticky .main-navigation .menu {
+	float: none;
+	background-color: white;
+}
+
+.page-header {
+    padding-bottom: 0;
+    border-bottom: 0 solid #eee;
+}
+
+.header-home {
+	margin-bottom: 2rem;
+}
+
+/****************************************************************/
+/* 2. NAVBAR */
+/****************************************************************/
+
+/* Menu items: Les Flux */
+.main-navigation a, .main-navigation ul li.current-menu-item a, .main-navigation ul li.current_page_ancestor a, .main-navigation ul li.current-menu-ancestor a, .main-navigation ul li.current_page_item a, .main-navigation ul li > a, .main-navigation li.current-menu-ancestor.menu-item-has-children > a, .main-navigation li.current-menu-item.menu-item-has-children > a, .main-navigation ul li > a, .main-navigation li.menu-item-has-children > a, .main-navigation li.page_item_has_children > a {
+	color: #B90504;
+	font-size: 0.8rem;
+	font-weight: bold;
+}
+
+.main-navigation a:hover, .main-navigation ul li.current-menu-item a, .main-navigation ul li.current_page_ancestor a, .main-navigation ul li.current-menu-ancestor a, .main-navigation ul li.current_page_item a, .main-navigation ul li:hover > a, .main-navigation li.current-menu-ancestor.menu-item-has-children > a, .main-navigation li.current-menu-item.menu-item-has-children > a, .main-navigation ul li:hover > a, .main-navigation li.menu-item-has-children > a:hover, .main-navigation li.page_item_has_children > a:hover {
+	color: #FFB6C1;
+}
+
+/* Menu items */
+.main-navigation a {
+	color: #B90504;
+	font-size: 0.8rem;
+}
+
+.main-navigation a:hover {
+	color: #FFB6C1;
+}
+
+/* Sub-menu (menu déroulant) */
+	/* Sub-menu arrow */
+.main-navigation li.menu-item-has-children > a:after, .main-navigation li li.menu-item-has-children > a:after, .main-navigation li.page_item_has_children > a:after, .main-navigation li li.page_item_has_children > a:after {
+	color: #B90504;
+}
+
+.main-navigation ul li ul li a, .main-navigation ul li.current-menu-item ul li a, .main-navigation ul li ul li.current-menu-item a, .main-navigation ul li.current_page_ancestor ul li a, .main-navigation ul li.current-menu-ancestor ul li a, .main-navigation ul li.current_page_item ul li a {
+	color: #B90504;
+	text-transform: uppercase;
+	font-size: 0.8rem;
+}
+
+.main-navigation ul li ul li a:hover, .main-navigation ul li ul li:hover > a, .main-navigation ul li.current-menu-item ul li a:hover {
+	color: #FFB6C1;
+}
+
+
+/****************************************************************/
+/* 3. LAST POSTS HOMEPAGE */
+/****************************************************************/
+
+
+/****************************************************************/
+/* 4. NEWSLETTER SIGNUP FORM */
+/****************************************************************/
+
+.newsletter {
+	background: #B90504;
+	margin-bottom: 3rem;
+	text-align: center;
+}
+
+#mc_embed_signup {
+	font-family: 'Lato', sans-serif;
+	font-size:0.8rem;
+	margin: auto;
+	padding: 2.5rem;
+	max-width: 800px;
+}
+
+.signup-newsletter {
+	color: white;
+	font-weight: 500;
+	font-size: 1.5rem;
+	margin-bottom: 0;
+}
+
+.signup-block {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.newsletter-input {
+	flex: 1 0 auto;
+	transition: 125ms;
+	min-width: 520px;
+	max-width: 520px;
+}
+
+#mc-embedded-subscribe.button {
+	background-color: #FFB6C1;
+	color: white;
+	width: 10rem;
+	height: 2.8rem;
+	font-weight: bold;
+}
+
+#mc-embedded-subscribe.button:hover {
+	background-color: #990100;
+	color: white;
+}
+
+.newsletter-footer {
+	font-size: 0.9rem;
+	font-style: oblique;
+}
+
+.newsletter-footer a {
+	color: white;
+}
+
+.newsletter-footer a:visited {
+	color: white;
+}
+
+.newsletter-footer a:hover {
+	color: #FFB6C1;
+}
+
+#mce-responses {
+	color: white;
+	font-weight: bold;
+}
+
+#mce-EMAIL {
+	color: black;
+}
+
+
+/****************************************************************/
+/* 5. VIDÉOS & ATELIERS */
+/****************************************************************/
+
+.last-videos ul {
+	margin: 2rem;
+}
+
+.last-ateliers ul {
+	margin: 2rem;
+}
+
+.thumbnail-last-videos, .thumbnail-last-ateliers {
+	margin-bottom: 1rem;
+}
+
+.last-videos a h4:hover {
+	color: #FFB6C1;
+}
+
+.last-ateliers a h4:hover {
+	color: #FFB6C1;
+}
+
+
+/****************************************************************/
+/* 6. FOOTER */
+/****************************************************************/
+
+footer {
+}
+
+.site-info {
+	background-color: #B90504;
+}
+
+#footer-navigation .menu-item a {
+	color: white;
+}
+
+#footer-navigation .menu-item a:hover {
+	color: #FFB6C1;
+}
+
+.site-info .copyright {
+	color: white;
+	margin-bottom: 2rem;
+}
+
+.site-info .copyright a {
+	color: white;
+}
+
+.site-info .copyright a:hover {
+	color: #FFB6C1;
+}
+
+#footer-navigation ul {
+	color: white;
+}
+
+.go-to-top a {
+	border: 2px solid #FFB6C1;
+	color: #FFB6C1;
+}
+
+.go-to-top a:hover {
+	border: 2px solid #FFB6C1;
+	color: #FFB6C1;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+#footer-navigation ul li:before {
+	border-right-color: white;
+}
+
+
+/* POSTS */
+
+/****************************************************************/
+/* 1. ALL POSTS */
+/****************************************************************/
+
+.container-all-posts {
+	margin: 3rem 1rem 3rem 1rem;
+}
+
+.entry-title a {
+	text-transform: uppercase;
+	color: #B90504;
+}
+
+.entry-title a:hover {
+	color: #FFB6C1;
+}
+
+.more-link {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.more-link:hover {
+	color: #990100;
+}
+
+.post-thumbnail {
+	margin-bottom: 1rem;
+	height: 60vh;
+	width: 100%;
+	min-height: 400px;
+	max-height: calc(((100vw / 3) - 64px) * 1);
+	object-fit: cover;
+}
+
+.image-resize {
+	background-size: cover;
+	width: 300px;
+	height: 200px;
+}
+
+.wp-all-posts {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.one-post {
+	flex: 0 0 calc(100% / 1);
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	word-break: break-word;
+}
+
+@media screen and (min-width: 641px) {
+	.one-post {
+		flex: 0 0 calc(100% / 2);
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	.one-post {
+		flex: 0 0 calc(100% / 3);
+	}
+}
+
+.one-post .entry-content {
+	flex: 1 0 auto;
+}
+
+.entry-footer {
+	border-bottom: none;
+}
+
+/* These titles are only displayed on mobile */
+@media screen and (min-width: 641px) {
+	.posts-page-title {
+		display: none;
+	}
+}
+
+/****************************************************************/
+/* 1. ONE POST LAYOUT (single.php) */
+/****************************************************************/
+
+.row-single {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.entry-meta, .entry-meta a {
+	color: grey;
+}
+
+.entry-meta, .entry-meta a:hover {
+	color: #B90504;
+}
+
+.cat-links, .cat-links a, .tag-links, .tag-links a {
+	color: grey;
+}
+
+.cat-links:hover, .cat-links a:hover, .tag-links:hover, .tag-links a:hover {
+	color: #B90504;
+}
+
+.cat-links, .tag-links {
+	border-bottom: none;
+}
+
+ul.default-wp-page li a {
+	color: grey;
+}
+
+ul.default-wp-page li a:hover {
+	color: #B90504;
+}
+
+.entry-content img, .comment-content img, .widget img {
+	width: 100%;
+}
+
+.entry-content p {
+	text-align: justify;
+}
+
+/* LETTRINE ? */
+.entry-content p:first-of-type:first-letter {
+}
+
+#main ul li {
+	font-size: 1rem;
+	text-align: justify;
+}
+
+
+/* PAGES */
+
+/****************************************************************/
+/* 1. ALL PAGES */
+/****************************************************************/
+
+.row-page {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+@media screen and (min-width: 1025px) {
+	.row-page {
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 1025px) {
+	.row-page-newsletter {
+		width: 100%;
+	}
+}
+
+#primary {
+	width: 100%;
+}
+
+/****************************************************************/
+/* 2. CONTACT FORM */
+/****************************************************************/
+
+.error{
+	padding: 5px 9px;
+	border: 1px solid #B90504;
+	color: #B90504;
+	border-radius: 3px;
+}
+
+.success{
+	padding: 5px 9px;
+	border: 1px solid green;
+	color: green;
+	border-radius: 3px;
+}
+
+form span{
+	color: #B90504;
+}
+
+.contact-form {
+	width: 80%;
+	margin: auto;
+}
+
+@media screen and (min-width: 641px) {
+	.contact-form {
+		width: 50%;
+		margin: auto;
+	}
+}
+
+.contact-submit .contact-input {
+	color: white;
+	background-color: #B90504;
+}
+
+.contact-submit .contact-input:hover {
+	background-color: #990100;
+}
+
+/* SEARCHBAR & SEARCH RESULTS PAGE */
+
+/****************************************************************/
+/* 1. SEARCHBAR */
+/****************************************************************/
+
+.header-search:hover, .header-search-x:hover {
+	color: #B90504;
+}
+
+.search-submit {
+	background-color: #FFB6C1;
+	border: 1px solid #FFB6C1;
+	color: white;
+}
+
+/****************************************************************/
+/* 2. SEARCH RESULTS PAGE (search.php) */
+/****************************************************************/
+
