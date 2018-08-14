@@ -11,7 +11,7 @@ include 'header.php';
 ?>
 	<div class="row">
 		<div class="header-home">
-			<img class="alignnone size-large wp-image-93" src="https://imgur.com/r8AXEr1" alt="" width="790" height="444" />
+			<img class="alignnone size-large wp-image-93" src="/wp-content/uploads/2018/05/cropped-lightpainting_chatte_web-768x481.jpg" alt="" width="790" height="444" />
 		</div>
 	</div>
 
@@ -95,14 +95,14 @@ include 'header.php';
     <div class="row site-width">
         <div class="last-videos col-xs-12 col-lg-6">
             <ul>
-                <li><img src="https://imgur.com/r8AXEr1" alt="dernières vidéos" class="thumbnail-last-videos"></li>
+                <li><img src="/wp-content/uploads/2018/05/cropped-lightpainting_chatte_web-768x481.jpg" alt="dernières vidéos" class="thumbnail-last-videos"></li>
                 <li><a href="#"><h4>Voir les dernières vidéos</h4></a></li>
             </ul>
         </div>
 
         <div class="last-ateliers col-xs-12 col-lg-6">
             <ul>
-                <li><img src="https://imgur.com/r8AXEr1" alt="prochains ateliers" class="thumbnail-last-ateliers"></li>
+                <li><img src="/wp-content/uploads/2018/05/cropped-lightpainting_chatte_web-768x481.jpg" alt="prochains ateliers" class="thumbnail-last-ateliers"></li>
                 <li><a href="#"><h4>Voir les dates des prochains ateliers</h4></a></li>
             </ul>
         </div>
