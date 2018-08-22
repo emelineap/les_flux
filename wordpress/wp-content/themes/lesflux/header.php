@@ -28,6 +28,7 @@ $edge_settings = edge_get_theme_options(); ?>
 
 <!-- FONTS -->
 <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Lato" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 
 <!-- FAVICON -->
 <link rel="apple-touch-icon" sizes="57x57" href="/wp-content/themes/lesflux/assets/favicon.ico/apple-icon-57x57.png">

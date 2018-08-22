@@ -10,10 +10,11 @@ Template: edge
 0. BODY
 1. HEADER
 2. NAVBAR
-3. LAST POSTS HOMEPAGE
-4. NEWSLETTER SIGN UP FORM
-5. VIDÉOS & ATELIERS
-6. FOOTER
+3. BANNER
+4. LAST POSTS HOMEPAGE
+5. NEWSLETTER SIGN UP FORM
+6. VIDÉOS & ATELIERS
+7. FOOTER
 
 ///// POSTS /////
 1. ALL POSTS
@@ -152,15 +153,99 @@ h4 {
 	color: #FFB6C1;
 }
 
+/****************************************************************/
+/* 3. BANNER */
+/****************************************************************/
+
+.header-home-desktop {
+	display: none;
+	margin-bottom: 0;
+	margin-bottom: 0;
+}
+
+.header-home-mobile {
+	width: 100%;
+	margin: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* Mobile landscape and iPad */
+@media screen and (min-device-width: 376px) and (max-device-width: 1024px) {
+	.header-home-mobile {
+		display: none;
+	}
+	.header-home-desktop {
+		display: flex;
+		/*position: relative;*/
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+
+	.banner-desktop {
+		width: 100%;
+		margin: auto;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+/* Desktop */
+@media screen and (min-width: 641px) {
+	.header-home-mobile {
+		display: none;
+	}
+	.header-home-desktop {
+		display: flex;
+		/*position: relative;*/
+		margin-bottom: 5em;
+		margin-top: 0;
+	}
+
+	.banner-desktop {
+		width: 70%;
+		margin: auto;
+		margin-top: 0;
+	}
+}
+
+
+/*.header-home-text {
+	position: absolute;
+	top: 4em;
+	right: 5em;
+}
+
+.banner-home {
+	font-family: 'Comfortaa', cursive;
+	color: #990100;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.banner-underlined {
+	text-decoration: underline;
+}*/
+
 
 /****************************************************************/
-/* 3. LAST POSTS HOMEPAGE */
+/* 4. LAST POSTS HOMEPAGE */
 /****************************************************************/
 
 
 /****************************************************************/
-/* 4. NEWSLETTER SIGNUP FORM */
+/* 5. NEWSLETTER SIGNUP FORM */
 /****************************************************************/
+
+/* Input in mobile */
+@media screen and (min-width: 375px) and (max-width: 812px) {
+	.newsletter-input {
+		flex: 1 0 auto;
+		transition: 125ms;
+		min-width: 300px;
+		max-width: 300px;
+	}
+}
 
 .newsletter {
 	background: #B90504;
@@ -237,7 +322,7 @@ h4 {
 
 
 /****************************************************************/
-/* 5. VIDÉOS & ATELIERS */
+/* 6. VIDÉOS & ATELIERS */
 /****************************************************************/
 
 .last-videos ul {
@@ -262,7 +347,7 @@ h4 {
 
 
 /****************************************************************/
-/* 6. FOOTER */
+/* 7. FOOTER */
 /****************************************************************/
 
 footer {
