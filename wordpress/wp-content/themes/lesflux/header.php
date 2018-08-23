@@ -28,6 +28,7 @@ $edge_settings = edge_get_theme_options(); ?>
 
 <!-- FONTS -->
 <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Lato" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 
 <!-- FAVICON -->
 <link rel="apple-touch-icon" sizes="57x57" href="/wp-content/themes/lesflux/assets/favicon.ico/apple-icon-57x57.png">
@@ -165,10 +166,10 @@ if(is_front_page()){
 	do_action('edge_display_frontpage_features');
 }
 if(!is_home()){?>
-	<div class="page-header">
-		<h1 class="page-title"><?php echo edge_header_title(); ?></h1>
+	<!--<div class="page-header">
+		<h1 class="page-title"><?php /*echo edge_header_title(); */?></h1>
 		<!-- .page-title -->
-		<?php edge_breadcrumb(); ?>
+		<?php /*edge_breadcrumb(); */?>
 		<!-- .breadcrumb -->
 	</div>
 	<!-- .page-header -->

@@ -10,10 +10,11 @@ Template: edge
 0. BODY
 1. HEADER
 2. NAVBAR
-3. LAST POSTS HOMEPAGE
-4. NEWSLETTER SIGN UP FORM
-5. VIDÉOS & ATELIERS
-6. FOOTER
+3. BANNER
+4. LAST POSTS HOMEPAGE
+5. NEWSLETTER SIGN UP FORM
+6. VIDÉOS & ATELIERS
+7. FOOTER
 
 ///// POSTS /////
 1. ALL POSTS
@@ -152,14 +153,94 @@ h4 {
 	color: #FFB6C1;
 }
 
+/****************************************************************/
+/* 3. BANNER */
+/****************************************************************/
+
+/* Mobile in portrait mode */
+
+.header-home-desktop {
+	display: none;
+}
+
+.header-home-mobile {
+	display: flex;
+}
+
+.banner-mobile {
+	display: block;
+	width: 100%;
+	margin: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* iPad */
+
+@media screen and (min-width: 641px) {
+	.header-home-mobile {
+		display: none;
+	}
+
+	.header-home-desktop {
+		display: flex;
+	}
+
+	.banner-desktop {
+		display: block;
+		width: 100%;
+		margin: auto;
+		margin-top: 0;
+		margin-bottom: 2em;
+	}
+}
+
+/* Desktop */
+
+@media screen and (min-width: 1025px) {
+	.header-home-mobile {
+		display: none;
+	}
+
+	.header-home-desktop {
+		display: flex;
+	}
+
+	.banner-desktop {
+		display: block;
+		width: 70%;
+		margin: auto;
+		margin-top: 3em;
+		margin-bottom: 3em;
+	}
+}
+
+
+/*.header-home-text {
+	position: absolute;
+	top: 4em;
+	right: 5em;
+}
+
+.banner-home {
+	font-family: 'Comfortaa', cursive;
+	color: #990100;
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.banner-underlined {
+	text-decoration: underline;
+}*/
+
 
 /****************************************************************/
-/* 3. LAST POSTS HOMEPAGE */
+/* 4. LAST POSTS HOMEPAGE */
 /****************************************************************/
 
 
 /****************************************************************/
-/* 4. NEWSLETTER SIGNUP FORM */
+/* 5. NEWSLETTER SIGNUP FORM */
 /****************************************************************/
 
 .newsletter {
@@ -189,11 +270,22 @@ h4 {
 	justify-content: space-around;
 }
 
+/* Input on iPad and desktop */
+@media screen and (min-width: 641px) {
+	.newsletter-input {
+		flex: 1 0 auto;
+		transition: 125ms;
+		min-width: 520px;
+		max-width: 520px;
+	}
+}
+
+/* Input on mobile in portrait mode */
 .newsletter-input {
 	flex: 1 0 auto;
 	transition: 125ms;
-	min-width: 520px;
-	max-width: 520px;
+	min-width: 300px;
+	max-width: 400px;
 }
 
 #mc-embedded-subscribe.button {
@@ -237,7 +329,7 @@ h4 {
 
 
 /****************************************************************/
-/* 5. VIDÉOS & ATELIERS */
+/* 6. VIDÉOS & ATELIERS */
 /****************************************************************/
 
 .last-videos ul {
@@ -262,7 +354,7 @@ h4 {
 
 
 /****************************************************************/
-/* 6. FOOTER */
+/* 7. FOOTER */
 /****************************************************************/
 
 footer {
