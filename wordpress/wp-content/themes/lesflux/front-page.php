@@ -10,23 +10,27 @@
 include 'header.php';
 ?>
     <div class="header-home-desktop">
-        <img class="alignnone size-large wp-image-93 banner-desktop"
-             src="/wp-content/themes/lesflux/assets/img/lesflux_banner_line.png" alt="les flux banner" width="100%"/>
-        <!--<div class="header-home-text">
-            <p class="banner-home">Une initiative <span class="banner-underlined">féministe</span></p>
-            <p class="banner-home">pour la réappropriation des savoirs médicaux</p>
-            <p class="banner-home">sur les <span class="banner-underlined">cycles menstruels</span>, les <span class="banner-underlined">règles</span> et la <span class="banner-underlined">vulve</span></p>
-        </div>-->
+        <div class="header-home-container">
+            <img class="alignnone size-large wp-image-93 banner-desktop"
+                 src="/wp-content/themes/lesflux/assets/img/lesflux_banner_line.png" alt="les flux banner" width="100%"/>
+            <!--<div class="header-home-text">
+                <p class="banner-home">Une initiative <span class="banner-underlined">féministe</span></p>
+                <p class="banner-home">pour la réappropriation des savoirs médicaux</p>
+                <p class="banner-home">sur les <span class="banner-underlined">cycles menstruels</span>, les <span class="banner-underlined">règles</span> et la <span class="banner-underlined">vulve</span></p>
+            </div>-->
+        </div>
     </div>
 
     <div class="header-home-mobile">
-        <img class="alignnone size-large wp-image-93 banner-mobile"
-             src="/wp-content/themes/lesflux/assets/img/lesflux_banner_line_mobile.png" alt="les flux banner" width="100%"/>
-        <!--<div class="header-home-text">
-            <p class="banner-home">Une initiative <span class="banner-underlined">féministe</span></p>
-            <p class="banner-home">pour la réappropriation des savoirs médicaux</p>
-            <p class="banner-home">sur les <span class="banner-underlined">cycles menstruels</span>, les <span class="banner-underlined">règles</span> et la <span class="banner-underlined">vulve</span></p>
-        </div>-->
+        <div class="header-home-container">
+            <img class="alignnone size-large wp-image-93 banner-mobile"
+                 src="/wp-content/themes/lesflux/assets/img/lesflux_banner_line_mobile.png" alt="les flux banner" width="100%"/>
+            <!--<div class="header-home-text">
+                <p class="banner-home">Une initiative <span class="banner-underlined">féministe</span></p>
+                <p class="banner-home">pour la réappropriation des savoirs médicaux</p>
+                <p class="banner-home">sur les <span class="banner-underlined">cycles menstruels</span>, les <span class="banner-underlined">règles</span> et la <span class="banner-underlined">vulve</span></p>
+            </div>-->
+        </div>
     </div>
 
     <h2>DERNIERS ARTICLES</h2>
