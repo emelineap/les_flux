@@ -6,7 +6,12 @@
 
         <!-- Begin MailChimp Signup Form -->
         <div id="mc_embed_signup" style="text-align: center;"><form id="mc-embedded-subscribe-form" class="validate" action="https://tumblr.us14.list-manage.com/subscribe/post?u=5bd0d33a577ee592df934d133&amp;id=6ea9ff353e" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank">
-                <h4 id="mc_embed_signup_scroll" style="text-align: center;"><strong>ABONNEZ-VOUS À LA NEWSLETTER DE MA CHATTE</strong></h4>
+                <h4 id="mc_embed_signup_scroll" style="text-align: center;"><strong></strong></h4>
+                <img src="/wp-content/themes/lesflux/assets/img/newsletter_logo.png" alt="logo newsletter de ma chatte">
+                <p class="newsletter-text">La Newsletter de ma chatte est envoyée plus ou moins régulièrement, toutes les six semaines en moyenne.
+                    C'est un outil d'information autour de la santé gynécologique ; nous y partageons à la fois des tribunes, nos lectures, des témoignages ou des entretiens.
+                    C'est aussi là que nous diffusons les dates des prochains ateliers et les liens pour s'y incrire.
+                    Elle est ouverte aux contributions donc n'hésitez pas à nous écrire !</p>
                 <div class="mc-field-group" style="text-align: center;">
                     <div class="signup-block">
                         <div class="newsletter-input">

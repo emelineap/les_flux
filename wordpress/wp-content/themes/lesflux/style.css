@@ -560,6 +560,7 @@ ul.default-wp-page li a:hover {
 @media screen and (min-width: 1025px) {
 	.row-page {
 		width: 50%;
+		margin-top: 3em;
 	}
 }
 
@@ -571,6 +572,11 @@ ul.default-wp-page li a:hover {
 
 #primary {
 	width: 100%;
+}
+
+.newsletter-text {
+	margin-top: 3em;
+	margin-bottom: 3em;
 }
 
 /****************************************************************/
