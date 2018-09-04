@@ -357,9 +357,6 @@ h4 {
 /* 7. FOOTER */
 /****************************************************************/
 
-footer {
-}
-
 .site-info {
 	background-color: #B90504;
 }
@@ -422,6 +419,10 @@ footer {
 
 .entry-title a:hover {
 	color: #FFB6C1;
+}
+
+.entry-title a:visited {
+	color: #B90504;
 }
 
 .more-link {
@@ -499,6 +500,10 @@ footer {
 	width: 50%;
 }
 
+.entry-header {
+	padding-top: 3rem;
+}
+
 .entry-meta, .entry-meta a {
 	color: grey;
 }
@@ -572,6 +577,7 @@ ul.default-wp-page li a:hover {
 
 #primary {
 	width: 100%;
+	float: none;
 }
 
 .newsletter-text {

@@ -54,5 +54,5 @@ if(($edge_settings['edge_sidebar_layout_options'] != 'nosidebar') && ($edge_sett
 </div>
 <?php endif;
 }
-get_sidebar();
+// get_sidebar();
 get_footer();
