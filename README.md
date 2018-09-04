@@ -11,5 +11,6 @@
 * [Émeline](https://github.com/emelineap),
 with a little help from [Antoine](https://github.com/romuleald)
 
-All rights reserved &copy; Les Flux, 2018
+
+__All rights reserved &copy; Les Flux, 2018__
 
