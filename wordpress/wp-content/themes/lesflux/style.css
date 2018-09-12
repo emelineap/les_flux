@@ -498,10 +498,20 @@ h4 {
 /* 1. ONE POST LAYOUT (single.php) */
 /****************************************************************/
 
+/* Paragraph width on mobile */
 .row-single {
 	margin-left: auto;
 	margin-right: auto;
-	width: 50%;
+	width: 80%;
+}
+
+/* Paragraph width on iPad and desktop */
+@media screen and (min-width: 641px) {
+	.row-single {
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+	}
 }
 
 .entry-header {
